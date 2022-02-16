@@ -1,15 +1,17 @@
-our_sum = 0
+def get_sum_of_digit(digit):
+    f_sum = 0
+    if digit == 3:
+        for i in range(1000):
+            if i % digit == 0:
+                f_sum += i
+        return f_sum
 
-for i in range(1000):
-    if i % 3 == 0:
-        our_sum += i
-        i += 3
+    if digit == 5:
+        for i in range(1000):
+            if i % digit == 0 and i % 3 != 0:
+                f_sum += i
+        return f_sum
 
-i = 0
-for i in range(1000):
-    if i % 5 == 0 and i % 3 != 0:
-        our_sum += i
-        i += 5
 
-print(our_sum)
+print(get_sum_of_digit(3) + get_sum_of_digit(5))
 
