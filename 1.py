@@ -1,3 +1,4 @@
+#projectEuler
 def get_sum_of_digit(digit):
     f_sum = 0
     if digit == 3:
