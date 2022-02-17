@@ -1,4 +1,3 @@
-#projectEuler
 def get_sum_of_digit(digit):
     f_sum = 0
     if digit == 3:
@@ -14,5 +13,4 @@ def get_sum_of_digit(digit):
         return f_sum
 
 
-print(get_sum_of_digit(3) + get_sum_of_digit(5))
-
+print(f"The sum is {get_sum_of_digit(3) + get_sum_of_digit(5)}")
